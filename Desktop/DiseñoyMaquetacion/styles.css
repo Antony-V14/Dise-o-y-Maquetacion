@@ -1,0 +1,94 @@
+body {
+  margin: 20px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0e17b3, #510101);
+  color: #f0f0f0;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+    
+header {
+  background: linear-gradient(135deg, #0e17b3, #510101);
+  padding: 50px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  border-bottom: 3px solid #0d80aa;
+}
+
+header h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 3rem;
+  color: #00c6ff;
+  text-shadow: 3px 3px 15px rgba(0, 198, 255, 0.8); /* Aumenta el desenfoque para un efecto más brillante, esto lo escribí yo profe*/
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  /* Crea 2 columnas de igual tamaño */
+  grid-template-columns: 1fr 1fr; 
+  /* Espacio entre columnas */
+  gap: 20px; 
+}
+
+/* Contenedor principal de la sección */
+.contenedor-secciones {
+  display: grid;
+  /* Crea dos columnas de igual tamaño */
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Estilo para las cajas de información */
+.caja-info {
+  background: rgba(85, 33, 33, 0.1); /* Efecto cristalino */
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Desenfoque de fondo */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste responsivo: Pasa a 1 columna en pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-secciones {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+footer {
+ background: linear-gradient(135deg, #0e17b3, #510101);
+  color: #aaa;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #00c6ff;
+  box-shadow: 0 -2px 8px rgba(8, 116, 210, 0.5);
+}
